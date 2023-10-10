@@ -8,7 +8,32 @@ class node {
 
 function traverse(root) {
   // Implement
+  const values = [];
+  const queue = [];
+  queue.push(root)
+  
+  while(queue.length != 0) {
+    // remove from queue
+    const current = queue.shift();
+
+    // add value of removed node to values
+    values.push(current.value);
+
+    // check if removed node has a left child, if yes, add to queue
+    if(current.left != null) {
+      queue.push(current.left);
+    }
+    // check if removed node has a right child, if yes, add to queue
+    if(current.right != null) {
+      queue.push(current.right);
+    }
+  }
+  // return value
+  return values;
 }
+
+
+
 
 // Test cases:
 const head = new node(6)
