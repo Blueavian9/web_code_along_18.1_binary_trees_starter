@@ -35,23 +35,18 @@ head.right = new node(9);
 
 console.log(traverse(head0) // 3, 6, 9
 
-/* 
-Plan: 
-1. 
-2. 
-3. 
-4.
 
-
-
-
-*/
-
-
-// Implement a level-order breadth-first traversal for a binary tree using the provided class for a binary tree node.
-// the return should be a list of values in the binary tree, based on a level-order (searching left to right at each "level") breadth-first traversal
-
-// Hint: implementing BFS requires a queue data structure.
-// For a quick and easy queue implementation:
-// const queue = []
-// then queue.push(value) to enqueue and queue.shift() to dequeue
+ 
+// Plan: 
+// 1. Implement a level-order breadth-first traversal for a binary tree using the provided class for a binary tree node. 
+// 
+// 2. The return should be a list of values in the binary tree, based on a level-order (searching left to right at each "level") 
+// breadth-first traversal.
+// 
+// 3. Hint: Implementing BFS requires a queue data structure.
+// 
+// 4. For a quick and easy queue implementation: const queue = [];
+// 
+// 5. then `queue.push(value)` to `enqueue` and `queue.shift()` to `dequeue`.
+//
+//
